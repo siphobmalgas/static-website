@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sipho's Online Store</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Sipho's Online Grocery Store</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#" id="groceries-link">Groceries</a></li>
+        <li><a href="#" id="cleaning-link">Cleaning Essentials</a></li>
+        <li><a href="#" id="sales-link">Sales & Deals</a></li>
+        <li><a href="#" id="cart-link">Cart</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="welcome-section">
+        <p id="welcome-text">
+          This is Sipho's Online Store. Here, you can browse and select grocery
+          items to add to your cart.
+          <br />
+          <br />
+          To view our grocery items, please click on the "Groceries" menu. To
+          see the items you have chosen to buy, click on the "Cart" menu. This
+          page serves as your starting point for shopping.
+          <br />
+          <br />
+          If the item you is greyed out, it means it is out of stock. Please
+          check back later for availability.
+        </p>
+      </section>
+
+      <section id="product-list" class="hidden">
+        <ul id="shoppingList" class="product-list-ul"></ul>
+      </section>
+
+      <section id="cart-section" class="hidden">
+        <h2>Your Cart</h2>
+        <ul id="cart-items" class="product-list-ul"></ul>
+        <p>Total: R<span id="total-price">0.00</span></p>
+        <button>Checkout</button>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
